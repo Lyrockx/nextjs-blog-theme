@@ -1,1 +1,48 @@
-colorBackground {
+.colorBackground {
+  background: linear-gradient(to bottom right, #000, #333);
+}
+
+.colorBackgroundBottom {
+  background: linear-gradient(to top left, #fff, #ccc);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #444;
+  margin: 1rem 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.fade-in {
+  animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
