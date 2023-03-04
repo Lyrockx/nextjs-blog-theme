@@ -7,8 +7,6 @@
   max-width: 1400px;
   width: 70vw;
   width: 100%;
-  filter:
-  z-index: -1;
 }
 
 .colorBackgroundBottom {
@@ -19,6 +17,4 @@
   max-width: 900px;
   width: 55vw;
   width: 100%;
-  filter:
-  z-index: -1;
 }
