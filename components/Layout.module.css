@@ -1,38 +1,24 @@
 .colorBackground {
   left: 50%;
   transform: translateX(-50%);
-  background-image:
-    linear-gradient(to bottom, var(--color-gradient-1) 0%, var(--color-gradient-1) 33.33%, transparent 33.33%, transparent 100%),
-    linear-gradient(to bottom, var(--color-gradient-3) 0%, var(--color-gradient-3) 33.33%, transparent 33.33%, transparent 100%),
-    linear-gradient(to bottom, var(--color-gradient-3) 0%, var(--color-gradient-3) 28.57%, transparent 28.57%, transparent 100%),
-    linear-gradient(to bottom, var(--color-gradient-1) 0%, var(--color-gradient-1) 53.33%, transparent 53.33%, transparent 100%),
-    linear-gradient(to bottom, var(--color-gradient-2) 0%, var(--color-gradient-2) 54.55%, transparent 54.55%, transparent 100%),
-    linear-gradient(to bottom, var(--color-gradient-2) 0%, var(--color-gradient-2) 40%, transparent 40%, transparent 100%),
-    linear-gradient(to bottom, var(--color-gradient-1) 0%, var(--color-gradient-1) 50%, transparent 50%, transparent 100%);
+  background-image: url('https://github.com/Lyrockx/Image/blob/main/DragonRecurrence.jpg?raw=true');
   max-height: 800px;
   height: 80vh;
   max-width: 1400px;
   width: 70vw;
   width: 100%;
-  filter: url(#pixelate);
+  filter: blur(50px);
   z-index: -1;
 }
 
 .colorBackgroundBottom {
   left: 50%;
-  transform: translateX(-50%) rotate(190deg);
-  background-image:
-    linear-gradient(to bottom, var(--color-gradient-1) 0%, var(--color-gradient-1) 33.33%, transparent 33.33%, transparent 100%),
-    linear-gradient(to bottom, var(--color-gradient-3) 0%, var(--color-gradient-3) 33.33%, transparent 33.33%, transparent 100%),
-    linear-gradient(to bottom, var(--color-gradient-3) 0%, var(--color-gradient-3) 28.57%, transparent 28.57%, transparent 100%),
-    linear-gradient(to bottom, var(--color-gradient-1) 0%, var(--color-gradient-1) 53.33%, transparent 53.33%, transparent 100%),
-    linear-gradient(to bottom, var(--color-gradient-2) 0%, var(--color-gradient-2) 54.55%, transparent 54.55%, transparent 100%),
-    linear-gradient(to bottom, var(--color-gradient-2) 0%, var(--color-gradient-2) 40%, transparent 40%, transparent 100%),
-    linear-gradient(to bottom, var(--color-gradient-1) 0%, var(--color-gradient-1) 50%, transparent 50%, transparent 100%);
+  transform: translateX(-50%) rotate(180deg);
+  background-image: url('https://github.com/Lyrockx/Image/blob/main/DragonRecurrence.jpg?raw=true');
   height: 600px;
   max-width: 900px;
   width: 55vw;
   width: 100%;
-  filter: url(#pixelate);
+  filter: blur(50px);
   z-index: -1;
 }
