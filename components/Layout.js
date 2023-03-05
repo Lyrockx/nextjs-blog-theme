@@ -18,13 +18,17 @@ export default function Layout({ children }) {
   const setAppTheme = () => {
     const darkMode = localStorage.getItem('theme') === 'dark';
     const lightMode = localStorage.getItem('theme') === 'light';
+    const html = document.documentElement;
 
     if (darkMode) {
-      document.documentElement.classList.add('dark');
+      html.classList.add('dark');
+      html.style.backgroundColor = '#1a1a1a';
     } else if (lightMode) {
-      document.documentElement.classList.remove('dark');
+      html.classList.remove('dark');
+      html.style.backgroundColor = '#f2f2f2';
+    } else {
+      html.style.backgroundColor = '#f2f2f2';
     }
-    return;
   };
 
   const handleSystemThemeChange = () => {
@@ -34,9 +38,11 @@ export default function Layout({ children }) {
       if (e.matches) {
         document.documentElement.classList.add('dark');
         localStorage.setItem('theme', 'dark');
+        document.documentElement.style.backgroundColor = '#1a1a1a';
       } else {
         document.documentElement.classList.remove('dark');
         localStorage.setItem('theme', 'light');
+        document.documentElement.style.backgroundColor = '#f2f2f2';
       }
     };
   };
